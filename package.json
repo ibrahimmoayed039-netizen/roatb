@@ -1,0 +1,15 @@
+{
+  "name": "employee-salaries",
+  "version": "1.0.0",
+  "description": "برنامج رواتب الموظفين وسحوباتهم الشهرية",
+  "main": "main.js",
+  "scripts": { "start": "electron .", "build": "electron-builder --win portable --publish never" },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.ibrahim.employeesalaries",
+    "productName": "EmployeeSalaries",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "index.html", "style.css", "renderer.js"],
+    "win": { "target": "portable" }
+  }
+}

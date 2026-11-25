@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+<title>رواتب الموظفين</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side noprint">
+  <div class="brand"><b>رواتب</b><span>الموظفين والسحوبات</span></div>
+  <nav id="tabs">
+    <button data-t="dash" class="on">لوحة المتابعة</button>
+    <button data-t="emps">الموظفون</button>
+    <button data-t="moves">السحوبات والحركات</button>
+    <button data-t="payroll">كشف الرواتب</button>
+    <button data-t="settings">الإعدادات</button>
+  </nav>
+  <div class="mon"><label>الشهر</label><input type="month" id="month"></div>
+</aside>
+<main>
+  <section id="dash" class="on"></section>
+  <section id="emps"></section>
+  <section id="moves"></section>
+  <section id="payroll"></section>
+  <section id="settings"></section>
+</main>
+<div id="modal" class="modal noprint"></div>
+<script src="renderer.js"></script>
+</body>
+</html>
