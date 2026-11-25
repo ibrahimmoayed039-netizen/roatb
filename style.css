@@ -60,3 +60,13 @@ tfoot td{font-weight:700;background:#f4f7f6}
   .ph{display:block;margin-bottom:12px}
   .box{border:0}
 }
+.alert{background:#fbeaea;border:1px solid #e6c4c9;color:var(--red);padding:12px 16px;border-radius:10px;margin-bottom:18px;font-weight:600}
+.trend{display:flex;align-items:flex-end;justify-content:space-around;padding:18px 10px 12px;gap:8px;margin-bottom:22px}
+.trend .col{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+.trend i{display:block;width:34px;background:#c9d8d5;border-radius:6px 6px 0 0}
+.trend i.cur{background:var(--brass)}
+.trend small,.trend span{font-size:12px;color:var(--mut)}
+.lock{position:fixed;inset:0;background:var(--ink);display:flex;align-items:center;justify-content:center;z-index:99;flex-direction:column;gap:14px;color:#fff}
+.lock input{width:240px;text-align:center;font-size:20px;letter-spacing:6px}
+.lock b{font-size:34px;color:var(--brass)}
+@media print{body.slip .side,body.slip section.on{display:none!important}body.slip .modal.noprint{display:block!important;position:static;background:none}body.slip .dlg{width:100%;max-width:100%;padding:0}body.slip .act{display:none!important}.lock{display:none}}

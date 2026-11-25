@@ -4,5 +4,7 @@ contextBridge.exposeInMainWorld('api', {
   save: d => ipcRenderer.invoke('save', d),
   backup: d => ipcRenderer.invoke('backup', d),
   restore: () => ipcRenderer.invoke('restore'),
+  refocus: () => ipcRenderer.invoke('refocus'),
+  openBackups: () => ipcRenderer.invoke('openBackups'),
   saveText: (n, t) => ipcRenderer.invoke('saveText', n, t)
 });
